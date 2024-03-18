@@ -131,6 +131,8 @@ app.layout = html.Div([
                        for year in range(df['year'].min(), df['year'].max() + 1, 10)},
                 # default value is the min and max year
                 value=[df['year'].min(), df['year'].max()],
+                # add a tool tip
+                tooltip={'placement': 'top', 'always_visible': True},
                 # we dont want the slider to cross
                 allowCross=False,
             )

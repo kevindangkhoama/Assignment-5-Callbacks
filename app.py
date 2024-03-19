@@ -74,8 +74,11 @@ df['gdp'] = df['gdp'].astype(int)
 
 # %%
 # Make sure the k is removed and converted
-# for gdp_value in df['gdp']:
-#     print(gdp_value)
+for gdp_value in df['gdp']:
+    print(gdp_value)
+
+# %%
+print(df.dtypes)
 
 # %%
 # https://dash.plotly.com/tutorial
@@ -91,7 +94,7 @@ app.layout = html.Div([
     # https://dash.plotly.com/dash-html-components
     
     # Title
-    html.Div(className='row', children='Assignment 4: Basic UI',
+    html.Div(className='row', children='Assignment 5: Callbacks',
              style={'textAlign': 'center', 'fontFamily': 'Arial', 'color': 'blue', 'fontSize': 25}),
     
     # Paragraph describing the app
